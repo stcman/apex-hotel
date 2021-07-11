@@ -1,17 +1,20 @@
 <template>
   <div class="home">
+    <Navbar />
     <Splash />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import Splash from '../components/Splash.vue';
+  import Navbar from '../components/Navbar.vue';
+  import Splash from '../components/Splash.vue';
 
-export default {
-  name: 'Home',
-  components: {
-    Splash
+  export default {
+    name: 'Home',
+
+    components: {
+      Navbar,
+      Splash,
+    },
   }
-}
 </script>
